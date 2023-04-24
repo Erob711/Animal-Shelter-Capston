@@ -1,5 +1,3 @@
 # Final Capstone
 ​
-This directory contains all of the starter projects for the final capstone.
-​
-Each project contains instructions that provides information about the starting code and explains how to get started with the final capstone project.
+This is an application designed to help Rockville Animal Shelter manage their pets! Users can browse a listing of adoptable animals and apply to become a volunteer of the shelter. As approved volunteers they can edit pet listings and add new pet listings to the site!
