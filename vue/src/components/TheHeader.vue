@@ -1,19 +1,24 @@
 <template>
   <div>
+    <!-- <div class = "logo"><img
+          class="logo"
+          src="../assets/nobackgroundlogo.png"
+          alt="Rockville"
+        /></div> -->
     <nav>
-      <div class="logo-container">
+      <ul>
+        <li class= "logo-container">
         <img
           class="pupkit"
           src="../assets/pupkitnobackground.png"
           alt="Rockville"
         />
-        <img
+        <!-- <img
           class="logo"
           src="../assets/nobackgroundlogo.png"
           alt="Rockville"
-        />
-      </div>
-      <ul>
+        /> -->
+        </li> 
         <li><router-link :to="{ name: 'home' }">Browse Pets</router-link></li>
         <li>
           <router-link :to="{ name: 'view-adoptions' }"
@@ -119,7 +124,8 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  height: 250px;
+  height: 160%;
+  width: 100%;
 }
 
 nav li {
@@ -149,23 +155,39 @@ header {
   padding: 20px;
   margin-top: 60px;
 }
-.logo-container img.logo {
-  position: absolute;
-  top: -50px;
+/* .logo-container img.logo {
+  position: fixed;
+  top: -100px;
   right: 10;
-  width: 300px;
+  width: px;
   z-index: 2;
   height: 375px;
+} */
+.logo-container {
+  display: flex;
+  justify-content: flex-end;
 }
-.logo-container img.pupkit {
-  position: absolute;
+/* .logo-container img.pupkit {
+  position: fixed;
   top: -50px;
   right: 10;
   width: px;
   z-index: 2;
   height: 225px;
+} */
+/* .pupkit {
+  width: 80%;
+  height: 80%;
+} */
+/* .logo {
+  width: 100%;
+  height: 110%;
+  margin-bottom: 30%
+} */
+.pupkit {
+  height: 90%;
+  width: 90%;
 }
-
 @media only screen and (max-width: 768px) {
   nav {
     height: 100px;

@@ -1,7 +1,7 @@
 <template>
     <div id="nav">
     <router-view/>
-    <the-header></the-header>
+    <the-header class="the-header"></the-header>
     <sidebar></sidebar>
     <the-footer></the-footer>
 
@@ -97,5 +97,9 @@ button:after {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #bbb;
+}
+.the-header{
+  display: flex;
+  height: 10%;
 }
 </style>

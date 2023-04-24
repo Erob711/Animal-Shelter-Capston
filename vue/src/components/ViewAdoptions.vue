@@ -1,6 +1,8 @@
 <template>
 <body>
   <div class="container">
+     <h1 class ="adopted-pets-margin">
+    </h1>
     <button @click="scrollToTop" class="scroll-btn"><ion-icon name="paw-outline"></ion-icon></button>
     <div class="btn-container" id="btn-container">
       <button @click="selectSpecies(null)">All Adopted Pets</button>
@@ -275,6 +277,10 @@ button {
   display:inline-block;
   vertical-align: middle;
   
+}
+.adopted-pets-margin{
+  font-size: 120%;
+  margin-bottom: 20%;
 }
 @media only screen and (max-width: 768px) {
   .pet-container {

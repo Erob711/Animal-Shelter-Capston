@@ -95,6 +95,10 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Poppins:wght@300;400;500&display=swap");
+.container {
+  height: 5%;
+}
+
 .pet-container {
   font-family: Montserrat, sans-serif;
   display: flex;
