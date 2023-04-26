@@ -14,7 +14,6 @@ import java.util.List;
 @RestController
 @RequestMapping(path="/pet")
 @CrossOrigin
-@PreAuthorize("")
 //TODO preAuthorize??
 public class PetController {
     //private Pet pet;
@@ -29,6 +28,7 @@ public class PetController {
         this.petDao = petDao;
     }
     @ResponseStatus(HttpStatus.OK)
+    @PreAuthorize("permitAll")
     @RequestMapping(path="/all",method = RequestMethod.GET)
     public List<Pet> listAllPet(){
         //TODO list all pet from petDao.findAll()
