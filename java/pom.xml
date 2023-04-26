@@ -81,10 +81,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.projectlombok</groupId>-->
+<!--            <artifactId>lombok</artifactId>-->
+<!--        </dependency>-->
 
 
     </dependencies>
@@ -100,7 +100,7 @@
                 <artifactId>heroku-maven-plugin</artifactId>
                 <version>3.0.4</version>
                 <configuration>
-                    <appName>unique-name</appName>
+                    <appName>rockville-application</appName>
                     <processTypes>
                         <web>java $JAVA_OPTS -Dserver.port=$PORT -cp target/classes:target/dependency/* com.techelevator.Application</web>
                     </processTypes>

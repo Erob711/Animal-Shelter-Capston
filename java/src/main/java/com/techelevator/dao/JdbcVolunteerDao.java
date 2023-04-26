@@ -16,6 +16,10 @@ public class JdbcVolunteerDao implements VolunteerDao{
     public JdbcVolunteerDao(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
+    public JdbcVolunteerDao() {
+
+        jdbcTemplate = null;
+    }
     @Override
     public List<Volunteer> findAll() {
         List<Volunteer> volunteers = new ArrayList<>();

@@ -14,11 +14,16 @@ import java.util.List;
 @RestController
 @RequestMapping(path="/pet")
 @CrossOrigin
+@PreAuthorize("")
 //TODO preAuthorize??
 public class PetController {
     //private Pet pet;
     private final PetDao petDao;
+    public PetController() {
+        //this.pet = pet;
 
+        petDao = null;
+    }
     public PetController( PetDao petDao) {
         //this.pet = pet;
         this.petDao = petDao;

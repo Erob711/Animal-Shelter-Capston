@@ -14,7 +14,10 @@ import java.util.List;
 @CrossOrigin
 public class AdoptionController {
     private final AdoptionDao adoptionDao;
+    public AdoptionController() {
 
+        adoptionDao = null;
+    }
     public AdoptionController(AdoptionDao adoptionDao) {
         this.adoptionDao = adoptionDao;
     }
