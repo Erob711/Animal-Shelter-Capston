@@ -77,7 +77,7 @@ export default {
         email: this.email,
         phone: this.phone,
       };
-      console.log(volunteerApplication);
+      // console.log(volunteerApplication);
       const applicationEmail = {
         recipient: this.email,
         msgBody:
@@ -98,7 +98,7 @@ export default {
           }
         })
         .catch((error) => {
-          console.error("Error creating volunteer application:", error);
+          // console.error("Error creating volunteer application:", error);
         });
     },
   },

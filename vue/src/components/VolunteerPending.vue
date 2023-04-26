@@ -60,8 +60,8 @@ export default {
       });
     },
     updateStatus(volunteer, event) {
-      console.log("insid updateStatus Function" + event.target.value);
-      console.log(volunteer);
+      // console.log("insid updateStatus Function" + event.target.value);
+      // console.log(volunteer);
       volunteer.role = event.target.value;
       VolunteerService.updateVolunteerStatus(volunteer).then((response) => {
         this.$store.commit("SET_VOLANTEER_INFO", response.data);
