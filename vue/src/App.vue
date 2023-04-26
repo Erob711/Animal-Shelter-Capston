@@ -100,6 +100,6 @@ button:after {
 }
 .the-header{
   display: flex;
-  height: 10%;
+  
 }
 </style>
