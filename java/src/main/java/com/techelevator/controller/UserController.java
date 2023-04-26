@@ -16,9 +16,6 @@ import java.util.List;
 
 public class UserController {
     private UserDao userDao;
-    public UserController() {
-        //this.pet = pet;
-    }
     public UserController(UserDao userDao) {
         //this.pet = pet;
         this.userDao = userDao;

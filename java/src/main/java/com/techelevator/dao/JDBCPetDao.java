@@ -13,9 +13,7 @@ import java.util.List;
 public class JDBCPetDao implements PetDao {
     private final JdbcTemplate jdbcTemplate;
     public JDBCPetDao(DataSource dataSource) { jdbcTemplate = new JdbcTemplate(dataSource);}
-    public JDBCPetDao() {
-        jdbcTemplate = null;
-    }
+
 
     @Override
     public List<Pet> findAll() {

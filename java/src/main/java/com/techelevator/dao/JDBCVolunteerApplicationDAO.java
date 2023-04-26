@@ -17,10 +17,7 @@ public class JDBCVolunteerApplicationDAO implements VolunteerApplicationDAO {
     public JDBCVolunteerApplicationDAO(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
-    public JDBCVolunteerApplicationDAO() {
 
-        jdbcTemplate = null;
-    }
 
     @Override
     public List<VolunteerApplication> findAll() {

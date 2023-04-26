@@ -14,9 +14,7 @@ import java.util.List;
 public class JDBCAdoptionDao implements AdoptionDao {
         private final JdbcTemplate jdbcTemplate;
         public JDBCAdoptionDao(DataSource dataSource) { jdbcTemplate = new JdbcTemplate(dataSource);}
-        public JDBCAdoptionDao() {
-            jdbcTemplate = null;
-        }
+
 
         @Override
         public List <Adoption> findAllAdoptions() {

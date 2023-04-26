@@ -19,11 +19,7 @@ import java.util.List;
 public class PetController {
     //private Pet pet;
     private final PetDao petDao;
-    public PetController() {
-        //this.pet = pet;
 
-        petDao = null;
-    }
     public PetController( PetDao petDao) {
         //this.pet = pet;
         this.petDao = petDao;

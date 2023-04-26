@@ -16,9 +16,6 @@ import java.util.List;
 public class VolunteerController {
     private final VolunteerDao volunteerDao;
 
-    public VolunteerController() {
-        volunteerDao = null;
-    }
     public VolunteerController( VolunteerDao volunteerDao) {
 
         this.volunteerDao = volunteerDao;
