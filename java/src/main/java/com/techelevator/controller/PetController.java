@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+@PreAuthorize("permitAll")
 @RequestMapping(path="/pet")
 @CrossOrigin
 //TODO preAuthorize??
