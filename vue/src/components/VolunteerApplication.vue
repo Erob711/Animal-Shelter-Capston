@@ -97,9 +97,9 @@ export default {
             });
           }
         })
-        .catch((error) => {
-          // console.error("Error creating volunteer application:", error);
-        });
+        // .catch((error) => {
+        //   // console.error("Error creating volunteer application:", error);
+        // });
     },
   },
 };
