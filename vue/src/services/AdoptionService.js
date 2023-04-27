@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const http = axios.create({
-    baseURL: "https://animalsheltservice2023.herokuapp.com/"
+    baseURL: "https://rockville-application.herokuapp.com/"
 });
 
 export default {
