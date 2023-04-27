@@ -1,12 +1,12 @@
 import axios from 'axios';
 
-const http = axios.create({
-    baseURL: "http://localhost:9000"
-});
+// const http = axios.create({
+//     baseURL: "https://rockville-application.herokuapp.com"
+// });
 
 export default {
 
     sendEmail(email) {
-        return http.post('/sendMail', email)
+        return axios.post('/sendMail', email)
     }
 }
