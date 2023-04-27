@@ -19,6 +19,8 @@
           alt="Rockville"
         /> -->
         </li> 
+        <!-- <li class = "header-space">emattroberson@gmail.com</li> -->
+        <li class = "header-space">rockvilleanimalshelter@gmail.com</li>
         <li><router-link :to="{ name: 'home' }">Browse Pets</router-link></li>
         <li>
           <router-link :to="{ name: 'view-adoptions' }"
@@ -165,7 +167,7 @@ header {
 } */
 .logo-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 /* .logo-container img.pupkit {
   position: fixed;
@@ -212,6 +214,9 @@ header {
     position: absolute;
     top: 0;
     left: 0;
+  }
+  .header-space {
+    font-size: 50%;
   }
 }
 </style>

@@ -1,32 +1,32 @@
 import axios from 'axios';
 
-const http = axios.create({
-    baseURL: "http://localhost:9000"
-});
+// const http = axios.create({
+//     baseURL: "https://rockville-application.herokuapp.com"
+// });
 
 export default {
 
     findAllPets() {
-        return http.get('/pet/all')
+        return axios.get('/pet/all')
     },
 
     getPetById(petId) {
-        return http.get(`/pet/${petId}`)
+        return axios.get(`/pet/${petId}`)
     },
 
     createPet(pet) {
-        return http.post('/pet/all', pet)
+        return axios.post('/pet/all', pet)
     },
 
     updatePet(petId, pet) {
-        return http.put(`/pet/${petId}`, pet)
+        return axios.put(`/pet/${petId}`, pet)
     },
 
     findAdoptedPets() {
-        return http.get('/pet/all-adopted')
+        return axios.get('/pet/all-adopted')
     },
 
     findAllPhotos(petId) {
-        return http.get(`/pet/pet-photos/${petId}`)
+        return axios.get(`/pet/pet-photos/${petId}`)
     }
 }

@@ -56,7 +56,7 @@
 
 <script>
 import VolunteerService from "../services/VolunteerService";
-import emailService from "../services/EmailService";
+// import emailService from "../services/EmailService";
 
 export default {
   data() {
@@ -78,24 +78,24 @@ export default {
         phone: this.phone,
       };
       // console.log(volunteerApplication);
-      const applicationEmail = {
-        recipient: this.email,
-        msgBody:
-          "Thanks for applying! Your application is being reviewed by our administrators. Stand by for details!",
-        subject: "Thank you from Rockville!",
-      };
+      // const applicationEmail = {
+      //   recipient: this.email,
+      //   msgBody:
+      //     "Thanks for applying! Your application is being reviewed by our administrators. Stand by for details!",
+      //   subject: "Thank you from Rockville!",
+      // };
       VolunteerService.updateVolunteer(volunteerApplication)
         .then((response) => {
-          if (response.status == 200) {
-            emailService.sendEmail(applicationEmail).then((response) => {
+          // if (response.status == 200) {
+          //   emailService.sendEmail(applicationEmail).then((response) => {
               if (response.status == 200) {
                 this.$router.push({
                   path: "/login",
                   query: { registration: "success" },
                 });
               }
-            });
-          }
+            // });
+          // }
         })
         // .catch((error) => {
         //   // console.error("Error creating volunteer application:", error);
